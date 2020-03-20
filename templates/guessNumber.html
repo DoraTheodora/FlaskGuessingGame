@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block the_body %}
+            <form method="POST" action="/checkNumber">
+                <p> Insert a number between 1 and 1000 </p>
+                <font color="Red"> {{ lessOrGrater }} </font>
+                <br>
+                <input type="number" name="theNumber" autofocus>
+                </br><br>
+                <input type="submit" value="Check Guess">
+            </form>
+{% endblock %}
+i think

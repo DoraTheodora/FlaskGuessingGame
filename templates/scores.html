@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block the_body %}
+    <h2> High Scores </h2>
+        {% for item in data %}
+            <ul><font color="blue">::: {{item[0] }} </font> <br>
+                <ul><font color="green">::<b>{{item[1]}}</b>: {{item[2]}}</ul></font>
+                <ul>::<b>{{item[3]}}</b>: {{item[4]}}</ul>
+                <ul>::<b>{{item[5]}}</b>: {{item[6]}}</ul> <br>
+            </ul>
+        {% endfor %}
+        <button onclick="window.location.href = '/game'"> Play Again </button>
+{% endblock %}
+

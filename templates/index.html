@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block the_body %}
+    <h2> Welcome to 'Guess The Number!' Game! </h2>
+    <p> The system will produce a random number, and you need to guess it! </p>
+
+    <form method="POST" action="/guessNumber">
+        <p> Enter your name:  </p>
+
+        <input type="text" name="name" autofocus>
+        </br><br>
+        <input type="submit" value="Start Game">
+    </form>
+
+{% endblock %}
+

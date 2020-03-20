@@ -1,0 +1,15 @@
+
+
+{% extends "base.html" %}
+
+{% block the_body %}
+                <h2> Congratulations {{name}} ! </h2>
+                <font color="Red"> You guessed the correct answer in: {{ totalTime }} </font>
+                <br><br>
+                <font color="Blue"> You successed after: {{ trying }} attempts. </font>
+                <br><br>
+                <font color="Green"> You rank is: {{ rank }}. </font>
+                <br><br>
+                <button onclick="window.location.href = '/highscores'"> High Scores </button>
+                <button onclick="window.location.href = '/game'"> Play Again </button>
+{% endblock %}

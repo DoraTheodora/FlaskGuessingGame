@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block the_body %}
+    <h2> Posssible Matches </h2>
+    <ul>
+        {% for d in data %}
+            <li> {{d}}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
